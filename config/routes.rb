@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   # Routes for the Comment resource:
   # CREATE
+
+  get "/users", :controller => "users", :action => "index"
+
+
   get "/comments/new", :controller => "comments", :action => "new"
   post "/create_comment", :controller => "comments", :action => "create"
 
