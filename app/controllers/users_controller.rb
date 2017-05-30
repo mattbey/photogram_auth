@@ -4,4 +4,11 @@ class UsersController < ApplicationController
 
     render("users/index.html.erb")
   end
+
+  def edit
+    @user = User.find(params[:id])
+
+    render("users/edit.html.erb")
+  end
+
 end
