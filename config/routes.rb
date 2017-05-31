@@ -56,7 +56,7 @@ Rails.application.routes.draw do
 
   get "/users", :controller => "users", :action => "index"
   get "/users/:id", :controller => "users", :action => "show"
-  get "/users/:id/edit", :controller => "edit", :action => "edit"
+  get "/users/:id/edit", :controller => "users", :action => "edit"
 
   root "photos#index"
 
